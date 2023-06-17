@@ -1,0 +1,39 @@
+.bg-img{
+    background-image: url("https://tinyurl.com/2kfcegt8");
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.bg-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+.mainDiv{
+    border: 1px solid rgb(252, 251, 251);
+    box-shadow: 3px 3px 10px rgb(151, 149, 149);
+    width: 500px;
+    height: 430px;
+    border-radius: 10px;
+    z-index: 1000;
+    padding: 50px;
+    
+}
+.form-control{
+    width: 400px;
+    background-color: blanchedalmond;
+    box-shadow: 3px 3px 10px rgb(151, 149, 149);
+}
+img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
