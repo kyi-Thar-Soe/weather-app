@@ -10,7 +10,7 @@ export const ApiCall =async (url,method,data,isWeatherapi = false) => {
     headers.Authorization = `Bearer ${token}`
    }
    axios.defaults.headers = headers;
-   if(!isWeatherapi){
+   if(isWeatherapi){
     axios.defaults.headers = 'something';
    }
     return await axios[method](url,data)
