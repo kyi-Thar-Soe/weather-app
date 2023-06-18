@@ -4,7 +4,7 @@ import { ApiCall } from "./ApiService/ApiCall";
 export default function WeatherHistory() {
     const [data,setData] = useState(null);
     const navigate = useNavigate();
-    const url = "http://localhost:3000/weather_history";
+    const url = "https://weather-app-auth.onrender.com/weather_history";
     async function getUser() {
         {/*const response=await fetch(`http://localhost:3000/weather_history`);
         const result =await response.json();
