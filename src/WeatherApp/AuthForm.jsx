@@ -11,7 +11,7 @@ export default function AuthForm() {
   const handleSave =async () => {
     console.log(emailRef.current.value,passwordRef.current.value);
     if (emailRef.current.value && passwordRef.current.value){
-      const url = isLogin? "https://weather-app-auth.onrender.com/login": "https://weather-app-auth.onrender.com/register";
+      const url = isLogin? "http://localhost:3000/login": "http://localhost:3000/register";
     const data = await ApiCall(url, 'post', {
         email: emailRef.current.value,
         password: passwordRef.current.value
